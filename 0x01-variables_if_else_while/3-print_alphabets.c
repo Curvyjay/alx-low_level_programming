@@ -1,6 +1,5 @@
 #include <stdio.h>
-int main()
-{
+int main(){
 	char lowercase = 'a';
 	char uppercase  ='A';
 	// Print lowercase alphabet
