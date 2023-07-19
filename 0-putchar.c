@@ -1,5 +1,7 @@
 #include <stdio.h>
 int _putchar(char c);
+return putchar(c);
+
 {
 	_putchar( '_');
 	_putchar( 'p');
