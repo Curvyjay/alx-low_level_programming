@@ -1,35 +1,33 @@
+#include "main.h"
 /**
- * cap_string - capitalizes all words of a string.
- * @s: string.
- * Return: string.
+ * leet -  encodes a string into 1337.
+ * @s: string to code
+ * Return: the enconde string.
  */
-char *cap_string(char *s)
+char *leet(char *s)
 {
 	int i;
+	int j;
+	int k;
+
+	char l[] = "oOlLeEaAtT";
+	char e[] = "0011334477";
 
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if ((s[i - 1] == ' ' || s[i - 1] == '\n'
-		|| s[i - 1] == '\t' || s[i - 1] == ','
-		|| s[i - 1] == ';' || s[i - 1] == '!'
-		|| s[i - 1] == '?' || s[i - 1] == '"'
-		|| s[i - 1] == '(' || s[i - 1] == ')'
-		|| s[i - 1] == '{' || s[i - 1] == '}'
-		|| s[i - 1] == '.')
-		&& (s[i] >= 'a' && s[i] <= 'z'))
+		j = 0;
+		k = 0;
+		while (l[j] != '\0')
 		{
-			s[i] = s[i] - 32;
-		}
-		else if ((s[0] >= 97 && s[0] <= 122))
-		{
-			s[0] = s[0] - 32;
-		}
-		else
-		{
-			s[i] = s[i];
+			if (s[i] == l[j])
+			{
+				k = j;
+				s[i] = e[k];
+			}
+			j++;
 		}
 		i++;
 	}
 	return (s);
-}
+}}
