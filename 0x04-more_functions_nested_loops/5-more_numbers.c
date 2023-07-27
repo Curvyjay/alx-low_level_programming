@@ -1,12 +1,28 @@
-#include "main.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * more_numbers - Print numbers between 0 to 14 incl.
  *
- * Return: Always 0.
+ * Return: Void.
  */
-int main(void)
+void more_numbers(void)
 {
-    more_numbers();
-    return (0);
+	int i;
+	int x;
+
+	for (x = 0; x < 10; x++)
+	{
+		i = 0;
+		while (i <= 14)
+		{
+			if (i >= 10)
+			{
+				_putchar(i / 10 + '0');
+			}
+				_putchar(i % 10 + '0');
+			i++;
+		}
+	_putchar('\n');
+	}
 }
