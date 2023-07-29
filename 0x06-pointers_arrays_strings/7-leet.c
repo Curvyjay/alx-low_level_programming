@@ -16,9 +16,9 @@ char *leet(char *n)
 		{
 			if (n[i] == s1[j])
 			{
-				n([i] = s2[j];
-						}
-						}
-						}
-						return (0);
-						}
+				n[i] = s2[j];
+			}
+		}
+	}
+	return (n);
+}
