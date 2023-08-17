@@ -1,1 +1,2 @@
-it is function pointers
+function pointers
+
